@@ -515,7 +515,7 @@
             justify-content: space-between;
             align-items: center;
             gap: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 24px;
         }
 
         .cambridge-info h3 {
@@ -546,6 +546,66 @@
         .cambridge-btn:hover {
             background-color: var(--surface-accent);
             transform: translateY(-2px);
+        }
+
+        /* Card Pagos Semanales No Bancarizados */
+        .cash-payment-card {
+            background-color: #FFFFFF;
+            border-radius: var(--radius-md);
+            padding: 32px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            border-left: 6px solid var(--surface-accent);
+            margin-bottom: 40px;
+        }
+
+        .cash-header {
+            margin-bottom: 20px;
+        }
+
+        .cash-header h3 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cash-header h3 i {
+            color: var(--surface-accent);
+        }
+
+        .cash-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .cash-item {
+            background-color: var(--surface-muted);
+            padding: 16px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        .cash-item-title {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .cash-item-price {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--surface-accent);
+            margin-bottom: 4px;
+        }
+
+        .cash-item-detail {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
         }
 
         /* SECCIÓN DE BECAS Y BENEFICIOS ESPECIALES */
@@ -940,6 +1000,36 @@
                     <a href="https://jonpisilmx.github.io/niveldeingles/" class="cambridge-btn" target="_blank" rel="noopener">
                         <i class="fas fa-graduation-cap"></i> Evaluar mi nivel
                     </a>
+                </div>
+
+                <!-- Opción No Bancarizada / Pagos Semanales Mazunte -->
+                <div class="cash-payment-card">
+                    <div class="cash-header">
+                        <h3><i class="fas fa-wallet"></i> Opción para Alumnos en Mazunte (Modalidad No Bancarizada)</h3>
+                        <p>Pensado para la comunidad local: puedes cubrir tu curso mediante <strong>pagos semanales por adelantado</strong> en efectivo o transferencia sin requerir tarjeta de crédito.</p>
+                    </div>
+                    <div class="cash-grid">
+                        <div class="cash-item">
+                            <div class="cash-item-title">Nivel 1: Cimientos</div>
+                            <div class="cash-item-price">$700 / semana</div>
+                            <div class="cash-item-detail">4 pagos semanales por adelantado (Total: $2,800)</div>
+                        </div>
+                        <div class="cash-item">
+                            <div class="cash-item-title">Nivel 2: Fluidez</div>
+                            <div class="cash-item-price">$840 / semana</div>
+                            <div class="cash-item-detail">5 pagos semanales por adelantado (Total: $4,200)</div>
+                        </div>
+                        <div class="cash-item">
+                            <div class="cash-item-title">Nivel 3: Confianza</div>
+                            <div class="cash-item-price">$1,120 / semana</div>
+                            <div class="cash-item-detail">5 pagos semanales por adelantado (Total: $5,600)</div>
+                        </div>
+                        <div class="cash-item">
+                            <div class="cash-item-title">Nivel 4: Tiempos</div>
+                            <div class="cash-item-price">$1,120 / semana</div>
+                            <div class="cash-item-detail">5 pagos semanales por adelantado (Total: $5,600)</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
